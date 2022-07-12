@@ -183,8 +183,7 @@ public:
 			return;
 		}
 
-		try
-		{
+		try	{
 		Member<T>* prevInd = GetMember(index - 1);
 		Member<T>* Ind = GetMember(index);
 		Member<T>* that = new Member<T>;
