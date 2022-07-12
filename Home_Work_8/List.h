@@ -113,8 +113,7 @@ public:
 	//добавление в конец списка
 	void AddEnd(T data)
 	{
-		try
-		{
+		try {
 			//создаем новый элемент списка
 			Member<T>* that = new Member<T>;
 			that->data_ = data;
@@ -133,8 +132,7 @@ public:
 
 		}
 		// если не выделена память
-		catch (std::bad_alloc e) 
-		{
+		catch (std::bad_alloc e) {
 			std::cout << e.what() << "\n";
 			return;
 		}
@@ -144,8 +142,7 @@ public:
 	//добавление в начало списка
 	void AddBegine(T data)
 	{
-		try
-		{
+		try {
 			Member<T>* that = new Member<T>;
 			that->data_ = data;
 			that->next_ = begine_;
